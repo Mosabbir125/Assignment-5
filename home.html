@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 w-4/5 mx-auto">
+            <div class="navbar-start">
+                <a href="blog.html" class="btn bg-[#B4F461] px-7">Blog</a>
+            </div>
+            <div class="navbar-center lg:flex">
+                <img src="assets/logo.png" alt=""><a class="text-xl font-bold">Donate Bangladesh</a> 
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt=""><a id="upper-account-balance" class="text-xl font-bold"> 5500 </a><a class="text-xl font-bold">BDT</a>
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="flex justify-center mt-20">
+            <button id="show-donate-form" class="btn btn-lg mr-5">Donation</button>
+            <button id="show-history-form" class="btn btn-lg">History</button>
+        </div>
+        <div>
+            <div id="donate-form">
+                <div class="hero mt-10">
+                    <div class="hero-content flex-col lg:flex-row w-4/5 border rounded-2xl">
+                      <img src="assets/noakhali.png" alt="no img found">
+                      <div>
+                        <div>
+                            <button class="btn btn-lg"><img src="assets/coin.png" alt=""><a id="account-balance" class="text-xl font-bold"> 5500 </a><a class="text-xl font-bold">BDT</a></button>
+
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box text-center">
+                                    <h3 class="font-bold text-4xl">Congrates!</h3>
+                                    <div class="flex justify-center my-5">
+                                        <img src="assets/coin.png" alt="no img">
+                                    </div>
+                                    <p>You have donated for Human kind</p>
+                                    <p class="py-4 font-bold text-2xl">Successfully</p>
+                                    <form method="dialog">
+                                        <div class="flex justify-center">
+                                            <button class="btn">Close information</button>
+                                        </div> 
+                                    </form>
+                                </div>
+                            </dialog>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                            <p class="py-6">
+                            The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                            </p>
+                            <div class="form-control">
+                                <input type="text" id="input-donate-money" placeholder="Write Donation Amount" class="input input-bordered" required />
+                            </div> 
+                            <div class="form-control mt-6">
+                                <button id="btn-donate-money" class="btn bg-[#B4F461]">Donate Now</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- --- -->
+                <!-- <div class="hero mt-10">
+                    <div class="hero-content flex-col lg:flex-row w-4/5 border rounded-2xl">
+                      <img src="assets/feni.png" alt="no img found">
+                      <div>
+                        <div>
+                            <button class="btn btn-lg"><img src="assets/coin.png" alt=""><a class="text-xl font-bold"> 5500 </a><a class="text-xl font-bold">BDT</a></button>
+
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box text-center">
+                                    <h3 class="font-bold text-4xl">Congrates!</h3>
+                                    <div class="flex justify-center my-5">
+                                        <img src="assets/coin.png" alt="no img">
+                                    </div>
+                                    <p>You have donated for Human kind</p>
+                                    <p class="py-4 font-bold text-2xl">Successfully</p>
+                                    <form method="dialog">
+                                        <div class="flex justify-center">
+                                            <button class="btn">Close information</button>
+                                        </div> 
+                                    </form>
+                                </div>
+                            </dialog>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                            <p class="py-6">
+                                The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                            </p>
+                            <div class="form-control">
+                                <input type="text" placeholder="Write Donation Amount" class="input input-bordered" required />
+                            </div> 
+                            <div class="form-control mt-6">
+                                <button class="btn bg-[#B4F461]">Donate Now</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> -->
+                <!-- ---- -->
+                <!-- <div class="hero mt-10">
+                    <div class="hero-content flex-col lg:flex-row w-4/5 border rounded-2xl">
+                      <img src="assets/quota-protest.png" alt="no img found">
+                      <div>
+                        <div>
+                            <button class="btn btn-lg"><img src="assets/coin.png" alt=""><a class="text-xl font-bold"> 5500 </a><a class="text-xl font-bold">BDT</a></button>
+
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box text-center">
+                                    <h3 class="font-bold text-4xl">Congrates!</h3>
+                                    <div class="flex justify-center my-5">
+                                        <img src="assets/coin.png" alt="no img">
+                                    </div>
+                                    <p>You have donated for Human kind</p>
+                                    <p class="py-4 font-bold text-2xl">Successfully</p>
+                                    <form method="dialog">
+                                        <div class="flex justify-center">
+                                            <button class="btn">Close information</button>
+                                        </div> 
+                                    </form>
+                                </div>
+                            </dialog>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+                            <p class="py-6">
+                                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                            </p>
+                            <div class="form-control">
+                                <input type="text"  placeholder="Write Donation Amount" class="input input-bordered" required />
+                            </div> 
+                            <div class="form-control mt-6">
+                                <button  class="btn bg-[#B4F461]">Donate Now</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div id="history-form" class="history hidden">
+            <div id="history-container" class="text-center space-y-2 border">
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/features.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/remaining-money.js"></script>
+</body>
+</html>
